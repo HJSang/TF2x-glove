@@ -10,11 +10,11 @@
   
   - Since vector spaces are inherently linear structures, the most nature way todo this with vector differences:
 
-  <img src="https://latex.codecogs.com/gif.latex?F(w_i-w_j, \tilde{w}_k)=\frac{P_{ik}}{P_{jk}}"/>
+  <img src="https://latex.codecogs.com/gif.latex?F(w_i-w_j,\tilde{w}_k)=\frac{P_{ik}}{P_{jk}}"/>
 
   - ``F`` could to be a complicated function but it would obfuscate the linear structure. To avoid this issue, 
 
-  <img src="https://latex.codecogs.com/gif.latex? F((w_i-w_j)^T\tilde{w}_k) = \frac{P_{ik}}{P_{jk}}
+  <img src="https://latex.codecogs.com/gif.latex?F((w_i-w_j)^T\tilde{w}_k)=\frac{P_{ik}}{P_{jk}}"/>
 
   - ``F=exp``
 
@@ -22,5 +22,5 @@
 
   - Finally, adding an additional bias:
 
-  <img src="https://latex.codecogs.com/gif.latex?w_i^T\tilde{w}_k +b_i + \tilde{b}_{k} = \log(X_{ik})"\>
+  <img src="https://latex.codecogs.com/gif.latex?w_i^T\tilde{w}_k+b_i+\tilde{b}_{k}=\log(X_{ik})"\>
 
