@@ -22,5 +22,18 @@
 
   - Finally, adding an additional bias:
 
-  <img src="https://latex.codecogs.com/gif.latex?w_i^T\tilde{w}_k+b_i+\tilde{b}_{k}=\log(X_{ik})"\>
+  <img src="https://latex.codecogs.com/gif.latex?w_i^T\tilde{w}_k+b_i+\tilde{b}_k=\log(X_{ik})"/>
+
+  - The cost function:
+
+  <img src="https://latex.codecogs.com/gif.latex?J=\sum_{i,j=1}^Vf(X_{ij})(w_i^T\tilde{w}_j+b_i+\tilde{b}_j-\logX_{ij})^2"/>
+  ``V`` is the size of the vocabulary. The weighting function should obey the following properties:
+    * ``f(0)=0``. It should vanish as ``x->0`` fast enough that ``lim f(x)log^2(x)`` is finite.
+    * ``f(x)`` is non-decreasing 
+    * ``f(x)`` should be relatively small for large values, so that frequent co-occurences are not overweighted.
+    * For example:
+
+    ![image](../imgs/weights.png)
+
+    ![image](../imgs/plot.png)
 
