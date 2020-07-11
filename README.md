@@ -34,7 +34,7 @@
     -  ``f(x)`` should be relatively small for large values, so that frequent co-occurences are not overweighted.
     -  For example:
 
-    ![image](../imgs/weights.png)
+    ![image](./imgs/weights.png)
 
-    ![image](../imgs/plot.png)
+    ![image](./imgs/plot.png)
 
